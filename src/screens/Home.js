@@ -27,6 +27,11 @@ export default function Home({ navigation }) {
                 color='#0080ff'
                 onPressFunction={() => { navigation.navigate('Camera') }}
             />
+            <CustomButton
+                title="Image crop Pciker"
+                color='#0080ff'
+                onPressFunction={() => { navigation.navigate('Imagecrop') }}
+            />
        
         </View>
     )

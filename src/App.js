@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './screens/Home';
 import Camera from './screens/Camera';
+import Imagecrop from './screens/Imagecrop';
 
 
 const Stack = createStackNavigator();
@@ -13,7 +14,7 @@ function App() {
    
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="Home"
+          initialRouteName="Imagecrop"
           screenOptions={{
             headerTitleAlign: 'center',
             headerStyle: {
@@ -35,6 +36,10 @@ function App() {
           <Stack.Screen
             name="Camera"
             component={Camera}
+          />
+          <Stack.Screen
+            name="Imagecrop"
+            component={Imagecrop}
           />
         </Stack.Navigator>
       </NavigationContainer>
